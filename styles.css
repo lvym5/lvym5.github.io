@@ -1,0 +1,134 @@
+
+body {
+    font-family: ''Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;'
+}
+header {
+    background-color: #1E3059;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1E3059;
+    padding: 0.5em;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 2em;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+link {
+    color: white;
+}
+.paragraphs {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.headerstyle {
+    font-size: 25px;
+    line-height: 2;
+    color: #333;
+}
+
+.container {
+    width: 60%; /* This sets the width to the middle third of the page */
+    margin: 0 auto; /* Centers the container horizontally */
+    text-align: left; /* Centers text inside the container */
+}
+
+/* From Uiverse.io by nikk7007 */ 
+.button {
+    --color: #1E3059;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    color: var(--color);
+    z-index: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 0.5s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: white;
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   
+    .teambox {
+    display: flex;        /* Use flexbox */
+    justify-content: space-between; /* Optional, to add space between the containers */
+}
+
+.box {
+    flex: 1;              /* Each box takes equal width */
+    margin: 10px;         /* Optional margin between the boxes */
+    padding: 20px;        /* Optional padding inside the boxes */
+    text-align: center;   /* Center the text inside each box */
+}
+
+.names {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    font-weight: bold;
+}

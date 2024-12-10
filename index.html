@@ -4,61 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #0073e6;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #005bb5;
-            padding: 0.5em;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 2em;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Dolphin Data Analysis: A Predictive Approach</h1>
-        <p>John Ju, Lily McAboy, Luke Monsma, Professor Stacy DeRuiter, Dr. Andreas Fahlman</p>
+        <p>Chong Xiang (John) Ju, Lily McAboy, Luke Monsma, <a href="https://calvin.edu/people/stacy-l-de-ruiter" target="_blank" style = "color: white;" >Professor Stacy DeRuiter</a>, Dr. Andreas Fahlman</p>
     </header>
     <main>
-        <h2>About Us</h2>
-        <p>Vision Statement</p>
-        <p>All about the team!</p>
+        <div>
+            <a href="https://calvin.edu/academics/school-stem/computer-science" target="_blank">
+            <button class="button">Calvin Department of Computer Science</button>
+            </a>
+        </div>
+            <a href="https://docs.google.com/presentation/d/1R4-URmp3HJuJfoPHdyX4OhPIZLqz0IPR8HferUhu2hI/edit#slide=id.g315c230cd17_0_0" target="_blank">
+            <button class="button">Presentation Material</button>
+            </a>
+            <a href="https://github.com/lvym5/DATA396-Dolphin-Data-Analysis" target="_blank">
+            <button class = "button">Github</button>
+            </a>
+        </div>
+        <p class ="headerstyle">Vision Statement</p>
+        <div class="container">
+            <p class="paragraphs">
+                Our project aims to develop a machine learning model to diagnose respiratory illnesses in dolphins, advancing animal conservation efforts. Existing models rely on data from voluntarily beached dolphins, which limits their applicability to a broader population and fails to diagnose specific diseases like pneumonia. To address these limitations, our model will analyze in-water measurements, enabling assessments of captive dolphins, involuntarily beached dolphins, and wild dolphins captured temporarily. Using Python and the Scikit-Learn library, we will implement incremental machine learning to create a transparent and efficient supervised classification model hosted on a Shiny app, offering real-time respiratory health evaluations within 2-3 seconds. The model will detect abnormalities, diagnose diseases, and identify illness stages, with a focus on generalizability and robustness. Guided by Dr. Andreas Fahlman and Professor DeRuiter, our team—leveraging expertise in machine learning, data analytics, and neural networks—will collaborate to deliver a solution that empowers veterinarians to promptly assess and treat dolphins in various environments.
+            </p> 
+        </div>
+        <p class ="headerstyle">The Team (pending pictures)</p>
+        <div class="teambox">
+            <div class="box">
+                <p class = "names">Chong Xiang (John) Ju</p>
+                <p class = "paragraphs">John's description</p>
+            </div>
+            <div class="box">
+               <p class = "names">Lily McAboy</p>
+               <p class = "paragraphs">Hi! My name is Lily McAboy and I am double majoring in Computer Science and Data Science with a cognate track in engineering and a minor in math. I am from Zeeland, Michigan. In my free time, I love to craft (crochet, knit, scrapbook) and cook! </p>
+            </div>
+            <div class="box">
+                <p class="names">Luke Monsma</p>
+                <p class = "paragraphs">Luke's description</p>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
     </footer>
 </body>
 </html>
