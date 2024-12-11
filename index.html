@@ -24,25 +24,42 @@
             <button class = "button">Github</button>
             </a>
         </div>
-        <p class ="headerstyle">Vision Statement</p>
+        <div>
+            <a href="https://docs.google.com/document/d/1GKZhHdBvo7lU7pmdx0du7DtoJjHYRoi1VbhXUxkJsyQ/edit?tab=t.0" target="_blank">
+                <button class="button">Project Proposal</button>
+            </a>
+        </div>
+        <p class ="headerstyle">Our Vision</p>
         <div class="container">
+            <hr>
             <p class="paragraphs">
                 Our project aims to develop a machine learning model to diagnose respiratory illnesses in dolphins, advancing animal conservation efforts. Existing models rely on data from voluntarily beached dolphins, which limits their applicability to a broader population and fails to diagnose specific diseases like pneumonia. To address these limitations, our model will analyze in-water measurements, enabling assessments of captive dolphins, involuntarily beached dolphins, and wild dolphins captured temporarily. Using Python and the Scikit-Learn library, we will implement incremental machine learning to create a transparent and efficient supervised classification model hosted on a Shiny app, offering real-time respiratory health evaluations within 2-3 seconds. The model will detect abnormalities, diagnose diseases, and identify illness stages, with a focus on generalizability and robustness. Guided by Dr. Andreas Fahlman and Professor DeRuiter, our team—leveraging expertise in machine learning, data analytics, and neural networks—will collaborate to deliver a solution that empowers veterinarians to promptly assess and treat dolphins in various environments.
             </p> 
         </div>
+        <p class = "headerstyle">2024 Fall Progress</p>
+        <div class="container">
+            <hr>
+        <p class="paragraphs">
+            Over the semester, the primary focus was on revisiting the original logistic regression model by adapting it to new data and refining its methodology. The process began with creating exploratory graphs to visualize the data, which helped clarify the rationale behind the original feature selection. The initial logistic regression model was constructed using the glmmTMB package in R, replicating the features from the referenced study. However, the model's accuracy was lower than that of the original study (78.8% compared to 88.4%). Efforts have since concentrated on enhancing the modeling process, with a particular focus on reworking feature selection using the tidymodels package. The inclusion of "leave-one-animal-out" validation remains a work in progress, but an interim logistic regression model was used to demonstrate results until the refined approach is finalized.
+        </p>
+        <p class="paragraphs">
+            In addition to logistic regression, a neural network-based binary classifier was developed using PyTorch. The model utilized fully connected layers with ReLU activation functions, trained over 100 epochs with the Adam optimizer. Validation was performed by splitting the dataset into training (80%) and testing (20%) sets, repeating the process 30 times to calculate an average accuracy of 0.4917. Challenges include a high type II error rate and suboptimal accuracy (0.67) when relying on the four variables from the logistic regression model. Other improvements included renaming dataset variables to make them more intuitive and easier to interpret. Principal Component Analysis (PCA) was also employed to reduce dimensionality while retaining key information. Although PCA-derived components have not yet been incorporated into the models, they are expected to improve future analyses and predictive accuracy.
+        </p>
+    </div>
         <p class ="headerstyle">The Team (pending pictures)</p>
         <div class="teambox">
             <div class="box">
                 <p class = "names">Chong Xiang (John) Ju</p>
-                <p class = "paragraphs">John's description</p>
+                <p class = "paragraphs">My name is John Ju. I'm majoring in Data Science with a cognate in accounting. I come from Beijing, China. In my free time, I enjoy listening to music and playing games with my friends.</p>
             </div>
             <div class="box">
                <p class = "names">Lily McAboy</p>
-               <p class = "paragraphs">Hi! My name is Lily McAboy and I am double majoring in Computer Science and Data Science with a cognate track in engineering and a minor in math. I am from Zeeland, Michigan. In my free time, I love to craft (crochet, knit, scrapbook) and cook! </p>
+               <p class = "paragraphs">My name is Lily McAboy and I am double majoring in Computer Science and Data Science with a cognate track in engineering and a minor in math. I am from Zeeland, Michigan. In my free time, I love to craft (crochet, knit, scrapbook) and cook! </p>
             </div>
             <div class="box">
                 <p class="names">Luke Monsma</p>
-                <p class = "paragraphs">Luke's description</p>
+                <p class = "paragraphs">My name is Luke Monsma and I am majoring in Data Science with a cognate in biology. I'm from Warsaw, Indiana and like to spend time playing games or on walks.
+                </p>
             </div>
         </div>
     </main>
